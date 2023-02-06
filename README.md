@@ -23,7 +23,7 @@ Function throws Exception with Java 8
     });
 ```
 你可以利用本项目简化代码，
-```
+``` java
     // with function-ex
     list.forEach( ConsumerEx.without(this::persist) );
     // default throw a CheckedRuntimeException when SQLException occurs
@@ -65,6 +65,7 @@ public class Test { }
 | UnaryXxx   |   UnaryXxxEx |
 | BinaryXxx  |  BinaryXxxEx |
 | ToXxx      |      ToXxxEx |
+
 java.util.function.* (43) + java.lang.Runnable (1)， 
 对应为带检验异常版本 pers.sunrise.util.function.* 一共 44 个 Ex 函数式接口，
 用于简化你的代码。
