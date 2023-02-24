@@ -1,7 +1,8 @@
 # function-ex ( Chinese )
 Function throws Exception with Java 8
 ## 简介
-这是一套对 java.util.function.* 函数式接口的扩展库，它们都默认抛出了 Exception，用来更简洁地构建你的代码。例如：
+这是一套对 java.util.function.* 函数式接口的扩展库，它们都默认抛出了 Exception，用来更简洁地构建你的代码。
+类似于 Lombok 的 @SneakyThrows 的功能，但没有使用 Lombok。例如：
 ``` java
     void persist(Object o) throws SQLException {
         // into db
